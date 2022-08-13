@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="#home" id="navbar__logo">DailySpot</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="#home" id="navbar__logo">DailySpot</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#Home" class="navbar__links" id="home-page"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#How" class="navbar__links" id="How-page"
+                            >How it Works</a
+                        >
+                    </li>
+                    <li class="navbar__item">
+                        <a
+                            href="#About"
+                            class="navbar__links"
+                            id="About Us-page"
+                            >About Us</a
+                        >
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="#Home" class="button" id="home-page"
+                            >Sign-up</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="body">
+            <div class="phone"><img src="/images/iphone.png" alt="" /></div>
+            <div class="form">
+                <div class="form__header">
+                    <div class="form__header--logo">
+                        <img src="/images/confetti-white.jpg" alt="" />
+                    </div>
+                    <div class="form__header--text"><h2>Sign-Up</h2></div>
+                </div>
+                <form class="form__body">
+                    <div class="form-control poop">
+                        <input type="text" required />
+                        <label>First Name</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" required />
+                        <label>Last Name</label>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" required />
+                        <label>Phone Number</label>
+                    </div>
+                </form>
+                <button type="submit" class="spotify__submit">
+                    <h2>Submit</h2>
+                </button>
+            </div>
         </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="#Home" class="navbar__links" id="home-page">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#How" class="navbar__links" id="How-page">How it Works</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#About" class="navbar__links" id="About Us-page"
-              >About Us</a
+
+        <footer class="footer">
+            <a href="mailto:PLACEHOLDER?subject=Help">Support</a>
+            <a href="mailto:PLACEHOLDER?subject=Just Reaching Out"
+                >Contact Us</a
             >
-          </li>
-          <li class="navbar__btn">
-            <a href="#Home" class="button" id="home-page">Sign-up</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="body">
-      <div class="phone"><img src="/images/iphone.png" alt="" /></div>
-      <div class="form">
-        <div class="form__header">
-          <div class="form__header--logo">
-            <img src="/images/confetti-white.jpg" alt="" />
-          </div>
-          <div class="form__header--text"><h2>Sign-Up</h2></div>
-        </div>
-        <form class="form__body">
-          <div class="form-control poop">
-            <input type="text" required />
-            <label>First Name</label>
-          </div>
-          <div class="form-control">
-            <input type="text" required />
-            <label>Last Name</label>
-          </div>
-          <div class="form-control">
-            <input type="text" required />
-            <label>Phone Number</label>
-          </div>
-        </form>
-        <button type="submit" class="spotify__submit"><h2>Submit</h2></button>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <a href="mailto:PLACEHOLDER?subject=Help">Support</a>
-      <a href="mailto:PLACEHOLDER?subject=Just Reaching Out">Contact Us</a>
-      <a href="#">Cancel</a>
-    </footer>
-    <script src="app.js"></script>
-  </body>
+            <a href="#">Cancel</a>
+        </footer>
+        <script src="app.js"></script>
+    </body>
 </html>
