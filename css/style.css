@@ -320,7 +320,14 @@
 @media screen and (min-width: 800px) {
     .body {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
+    }
+
+    .phone {
+        margin-right: 100px;
+    }
+    .form {
+        margin-left: 100px;
     }
 }
 
