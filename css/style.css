@@ -326,6 +326,7 @@
     .phone {
         margin-right: 100px;
     }
+
     .form {
         margin-left: 100px;
     }
@@ -336,7 +337,7 @@
 /* Start of Footer */
 .footer {
     display: flex;
-    height: 100px;
+    height: 100vh;
     align-items: flex-start;
     justify-content: center;
     background-color: #131313;
@@ -352,3 +353,9 @@
 }
 
 /* End of Footer */
+
+
+/* Start of How */
+
+
+/* End of How */
