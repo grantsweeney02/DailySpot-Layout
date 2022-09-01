@@ -6,9 +6,16 @@
     scroll-behavior: smooth;
 }
 
+:root { 
+    --color-blackish: #131313;
+    --color-blue: #479cd6;
+    --color-green: #99e699;
+    --color-white: #ffffff;
+}
+
 /* Start of Navigation Bar */
 .navbar {
-    background: #131313;
+    background: var(--color-blackish);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -31,7 +38,7 @@
 }
 
 #navbar__logo {
-    background-color: #99e699;
+    background-color: var(--color-green);
     background: linear-gradient(90deg,
             rgba(255, 255, 255, 1) 0%,
             rgba(153, 230, 153, 1) 89%);
@@ -58,7 +65,7 @@
 }
 
 .navbar__links {
-    color: #fff;
+    color: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,19 +96,19 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background-color: #99e699;
+    background-color: var(--color-green);
     /* background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(153,230,153,1) 89%); */
-    color: #fff;
+    color: var(--color-white);
     transition: all 0.3s ease;
 }
 
 .button:hover {
-    background-color: #479cd6;
+    background-color: var(--color-blue);
 
 }
 
 .navbar__links:hover {
-    color: #479cd6;
+    color: var(--color-blue);
     text-decoration: underline;
     transition: all 0.3s ease;
 }
@@ -130,7 +137,7 @@
     }
 
     .navbar__menu.active {
-        background: #131313;
+        background: var(--color-blackish);
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -148,7 +155,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #fff;
+        background: var(--color-white);
     }
 
     .navbar__item {
@@ -209,7 +216,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px 0px;
-    background: #131313;
+    background: var(--color-blackish);
     background-image: url(/images/confetti.png);
     background-repeat: repeat;
 }
@@ -229,7 +236,7 @@
     padding: 20px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
     border-radius: 10px;
-    background-color: #479cd6;
+    background-color: var(--color-blue);
 }
 
 .form__header {
@@ -237,7 +244,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    background: #fff;
+    background: var(--color-white);
     border-radius: 5px;
 
 }
@@ -271,12 +278,12 @@
 .form-control>input {
     background-color: transparent;
     border: 0;
-    border-bottom: 3px #99e699 solid;
+    border-bottom: 3px var(--color-green) solid;
     display: block;
     width: 100%;
     padding: 15px 0;
     font-size: 18px;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .form-control>input:focus,
@@ -290,7 +297,7 @@
     left: 2px;
     min-width: 5px;
     pointer-events: none;
-    color: #99e699;
+    color: var(--color-green);
 }
 
 .form-control label span {
@@ -302,7 +309,7 @@
 
 .form-control input:focus+label span,
 .form-control input:valid+label span {
-    color: #99e699;
+    color: var(--color-green);
     transform: translateY(-20px);
 }
 
@@ -312,8 +319,8 @@
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    color: #fff;
-    background-color: #99e699;
+    color: var(--color-white);
+    background-color: var(--color-green);
     border: 0;
 }
 
@@ -340,14 +347,14 @@
     height: 100vh;
     align-items: flex-start;
     justify-content: center;
-    background-color: #131313;
+    background-color: var(--color-blackish);
 }
 
 .footer>a {
     text-decoration: none;
-    color: white;
+    color: var(--color-white);
     margin: 20px 5px 0px;
-    background-color: #99e699;
+    background-color: var(--color-green);
     padding: 20px;
     border-radius: 5px;
 }
@@ -356,6 +363,27 @@
 
 
 /* Start of How */
+.how__body {
+    height: 830.69px;
+    background-color: var(--color-blackish);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
 
+.how__body img {
+    height: 830.69px;
+}
+
+@media screen and (max-width: 800px) {
+    .how__body img {
+        width: 375px;
+        height: auto;
+    }
+
+    .how__body {
+        height: 500px;
+    }
+}
 
 /* End of How */
