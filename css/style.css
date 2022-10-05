@@ -387,3 +387,38 @@
 }
 
 /* End of How */
+
+
+/* Start of About */
+.about--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.about--header {
+    text-align: center;
+    margin: 50px 0px;
+    padding: 25px 200px;
+    border-radius: 10px;
+    background-color: var(--color-blue);
+}
+
+.about--bios {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about--bios__left {
+    text-align: left;
+    padding-right: 100px;
+
+}
+.about--bios__right {
+    text-align: right;
+    padding-left: 100px; 
+}
+/* End of About */
